@@ -125582,12 +125582,12 @@ break
 case 6:case 1:return A.F(q,r)
 case 2:return A.E(o,r)}})
 return A.G($async$CM,r)},
-xA(){var s=0,r=A.H(t.P),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5
-var $async$xA=A.B(function(b6,b7){if(b6===1){o=b7
+xA(){var s=0,r=A.H(t.P),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7
+var $async$xA=A.B(function(b8,b9){if(b8===1){o=b9
 s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.A(n.a.bD("bookings").d0(0),$async$xA)
-case 7:m=b7
+case 7:m=b9
 l=m.gci().length
 k=0
 j=0
@@ -125595,38 +125595,40 @@ i=0
 h=0
 g=0
 f=0
-a6=t.N
-a7=t.S
-e=A.a3(["motorcycle",0,"car",0,"other",0],a6,a7)
-a8=t.i
-d=A.a3(["motorcycle",0,"car",0,"other",0],a6,a8)
-c=A.a3(["ride",0,"delivery",0],a6,a7)
-b=A.a3(["ride",0,"delivery",0],a6,a8)
-for(a7=m.gci(),a8=a7.length,a9=0;a9<a7.length;a7.length===a8||(0,A.J)(a7),++a9){a=a7[a9]
-b0=a
-b0=J.eh(b0).dL(b0)
-b0.toString
-a0=b0
-b1=J.e(a0,"status")
-a1=b1==null?"":b1
-b0=J.e(a0,"selectedRide")
-b2=b0==null?null:J.b9(b0).toLowerCase()
-a2=b2==null?"other":b2
-b0=J.e(a0,"bookingType")
-b3=b0==null?null:J.b9(b0).toLowerCase()
-a3=b3==null?"ride":b3
-b0=J.e(a0,"fare")
-a4=J.eA(b0==null?0:b0)
-b0=J.e(a0,"discountAmount")
-a5=J.eA(b0==null?0:b0)
+a8=t.N
+a9=t.S
+e=A.a3(["motorcycle",0,"car",0,"other",0],a8,a9)
+b0=t.i
+d=A.a3(["motorcycle",0,"car",0,"other",0],a8,b0)
+c=A.a3(["ride",0,"delivery",0],a8,a9)
+b=A.a3(["ride",0,"delivery",0],a8,b0)
+for(a9=m.gci(),b0=a9.length,b1=0;b1<a9.length;a9.length===b0||(0,A.J)(a9),++b1){a=a9[b1]
+b2=a
+b2=J.eh(b2).dL(b2)
+b2.toString
+a0=b2
+b3=J.e(a0,"status")
+a1=b3==null?"":b3
+b2=J.e(a0,"selectedRide")
+b4=b2==null?null:J.b9(b2).toLowerCase()
+a2=b4==null?"other":b4
+b2=J.e(a0,"bookingType")
+b5=b2==null?null:J.b9(b2).toLowerCase()
+a3=b5==null?"ride":b5
+b2=J.e(a0,"fare")
+a4=J.eA(b2==null?0:b2)
+b2=J.e(a0,"discountAmount")
+a5=J.eA(b2==null?0:b2)
+a6=a4-a5
+a7=a6*0.15
 if(!J.qr(e,a2)){J.aH(e,a2,0)
-J.aH(d,a2,0)}b0=J.e(e,a2)
-if(b0==null)b0=0
-J.aH(e,a2,b0+1)
+J.aH(d,a2,0)}b2=J.e(e,a2)
+if(b2==null)b2=0
+J.aH(e,a2,b2+1)
 if(!J.qr(c,a3)){J.aH(c,a3,0)
-J.aH(b,a3,0)}b0=J.e(c,a3)
-if(b0==null)b0=0
-J.aH(c,a3,b0+1)
+J.aH(b,a3,0)}b2=J.e(c,a3)
+if(b2==null)b2=0
+J.aH(c,a3,b2+1)
 switch(a1){case"pending":++k
 break
 case"accepted":++j
@@ -125634,29 +125636,29 @@ break
 case"inProgress":++i
 break
 case"completed":++h
-f+=a4-a5
-b0=J.e(d,a2)
-if(b0==null)b0=0
-J.aH(d,a2,b0+(a4-a5))
-b0=J.e(b,a3)
-if(b0==null)b0=0
-J.aH(b,a3,b0+(a4-a5))
+f+=a7
+b2=J.e(d,a2)
+if(b2==null)b2=0
+J.aH(d,a2,b2+a7)
+b2=J.e(b,a3)
+if(b2==null)b2=0
+J.aH(b,a3,b2+a7)
 break
 case"cancelled":++g
-break}}a6=A.a3(["total",l,"pending",k,"accepted",j,"inProgress",i,"completed",h,"cancelled",g,"totalRevenue",f,"vehicleTypeCounts",e,"vehicleTypeRevenue",d,"bookingTypeCounts",c,"bookingTypeRevenue",b],a6,t.z)
-q=a6
+break}}a8=A.a3(["total",l,"pending",k,"accepted",j,"inProgress",i,"completed",h,"cancelled",g,"totalRevenue",f,"vehicleTypeCounts",e,"vehicleTypeRevenue",d,"bookingTypeCounts",c,"bookingTypeRevenue",b],a8,t.z)
+q=a8
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-b5=o
-a6=t.N
-a7=t.S
-a8=t.i
-a6=A.a3(["total",0,"pending",0,"accepted",0,"inProgress",0,"completed",0,"cancelled",0,"totalRevenue",0,"vehicleTypeCounts",A.a3(["motorcycle",0,"car",0,"other",0],a6,a7),"vehicleTypeRevenue",A.a3(["motorcycle",0,"car",0,"other",0],a6,a8),"bookingTypeCounts",A.a3(["ride",0,"delivery",0],a6,a7),"bookingTypeRevenue",A.a3(["ride",0,"delivery",0],a6,a8)],a6,t.z)
-q=a6
+b7=o
+a8=t.N
+a9=t.S
+b0=t.i
+a8=A.a3(["total",0,"pending",0,"accepted",0,"inProgress",0,"completed",0,"cancelled",0,"totalRevenue",0,"vehicleTypeCounts",A.a3(["motorcycle",0,"car",0,"other",0],a8,a9),"vehicleTypeRevenue",A.a3(["motorcycle",0,"car",0,"other",0],a8,b0),"bookingTypeCounts",A.a3(["ride",0,"delivery",0],a8,a9),"bookingTypeRevenue",A.a3(["ride",0,"delivery",0],a8,b0)],a8,t.z)
+q=a8
 s=1
 break
 s=6
@@ -125893,31 +125895,32 @@ break
 case 6:case 1:return A.F(q,r)
 case 2:return A.E(o,r)}})
 return A.G($async$CI,r)},
-D7(){var s=0,r=A.H(t.i),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b
-var $async$D7=A.B(function(a,a0){if(a===1){o=a0
+D7(){var s=0,r=A.H(t.i),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a
+var $async$D7=A.B(function(a0,a1){if(a0===1){o=a1
 s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.A(n.a.bD("bookings").kU(0,"status","completed").d0(0),$async$D7)
-case 7:m=a0
+case 7:m=a1
 l=0
-for(g=m.gci(),f=g.length,e=0;e<g.length;g.length===f||(0,A.J)(g),++e){k=g[e]
-d=k
-d=J.eh(d).dL(d)
-d.toString
-j=d
-d=J.e(j,"fare")
-i=J.eA(d==null?0:d)
-d=J.e(j,"discountAmount")
-h=J.eA(d==null?0:d)
-l+=i-h}g=l
-q=g
+for(f=m.gci(),e=f.length,d=0;d<f.length;f.length===e||(0,A.J)(f),++d){k=f[d]
+c=k
+c=J.eh(c).dL(c)
+c.toString
+j=c
+c=J.e(j,"fare")
+i=J.eA(c==null?0:c)
+c=J.e(j,"discountAmount")
+h=J.eA(c==null?0:c)
+g=i-h
+l+=g*0.15}f=l
+q=f
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-b=o
+a=o
 q=0
 s=1
 break
@@ -125928,46 +125931,47 @@ break
 case 6:case 1:return A.F(q,r)
 case 2:return A.E(o,r)}})
 return A.G($async$D7,r)},
-D2(){var s=0,r=A.H(t.V0),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5
-var $async$D2=A.B(function(a6,a7){if(a6===1){o=a7
+D2(){var s=0,r=A.H(t.V0),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6
+var $async$D2=A.B(function(a7,a8){if(a7===1){o=a8
 s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.A(n.a.bD("bookings").kU(0,"status","completed").d0(0),$async$D2)
-case 7:m=a7
+case 7:m=a8
 l=0
 k=0
 j=0
-for(b=m.gci(),a=b.length,a0=0;a0<b.length;b.length===a||(0,A.J)(b),++a0){i=b[a0]
-a1=i
-a1=J.eh(a1).dL(a1)
-a1.toString
-h=a1
-a1=J.e(h,"bookingType")
-g=J.b9(a1==null?"ride":a1)
-a1=J.e(h,"selectedRide")
-f=J.b9(a1==null?"":a1).toLowerCase()
-a1=J.e(h,"fare")
-e=J.eA(a1==null?0:a1)
-a1=J.e(h,"discountAmount")
-d=J.eA(a1==null?0:a1)
+for(a=m.gci(),a0=a.length,a1=0;a1<a.length;a.length===a0||(0,A.J)(a),++a1){i=a[a1]
+a2=i
+a2=J.eh(a2).dL(a2)
+a2.toString
+h=a2
+a2=J.e(h,"bookingType")
+g=J.b9(a2==null?"ride":a2)
+a2=J.e(h,"selectedRide")
+f=J.b9(a2==null?"":a2).toLowerCase()
+a2=J.e(h,"fare")
+e=J.eA(a2==null?0:a2)
+a2=J.e(h,"discountAmount")
+d=J.eA(a2==null?0:a2)
 c=e-d
-if(J.d(g,"delivery"))l+=c
-else{a1=f
-a2=J.a_(a1)
-a3=a2.gq(a1)
-if(0>a3)A.af(A.cY(0,0,a2.gq(a1),null,null))
-if(A.b0c(a1,"motor",0))k+=c
-else j+=c}}b=A.a3(["delivery",l,"motorcycle",k,"fourSix",j],t.N,t.i)
-q=b
+b=c*0.15
+if(J.d(g,"delivery"))l+=b
+else{a2=f
+a3=J.a_(a2)
+a4=a3.gq(a2)
+if(0>a4)A.af(A.cY(0,0,a3.gq(a2),null,null))
+if(A.b0c(a2,"motor",0))k+=b
+else j+=b}}a=A.a3(["delivery",l,"motorcycle",k,"fourSix",j],t.N,t.i)
+q=a
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-a5=o
-b=A.a3(["delivery",0,"motorcycle",0,"fourSix",0],t.N,t.i)
-q=b
+a6=o
+a=A.a3(["delivery",0,"motorcycle",0,"fourSix",0],t.N,t.i)
+q=a
 s=1
 break
 s=6
@@ -126051,47 +126055,49 @@ break
 case 6:case 1:return A.F(q,r)
 case 2:return A.E(o,r)}})
 return A.G($async$CY,r)},
-CL(){var s=0,r=A.H(t.P),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4
-var $async$CL=A.B(function(a5,a6){if(a5===1){o=a6
+CL(){var s=0,r=A.H(t.P),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6
+var $async$CL=A.B(function(a7,a8){if(a7===1){o=a8
 s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.A(n.a.bD("bookings").d0(0),$async$CL)
-case 7:m=a6
-d=t.N
-l=A.a3(["motorcycle",0,"car",0,"other",0],d,t.S)
-k=A.a3(["motorcycle",0,"car",0,"other",0],d,t.i)
-for(c=m.gci(),b=c.length,a=0;a<c.length;c.length===b||(0,A.J)(c),++a){j=c[a]
-a0=j
-a0=J.eh(a0).dL(a0)
-a0.toString
-i=a0
-a1=J.e(i,"status")
-h=a1==null?"":a1
-a0=J.e(i,"selectedRide")
-a2=a0==null?null:J.b9(a0).toLowerCase()
-g=a2==null?"other":a2
-a0=J.e(i,"fare")
-f=J.eA(a0==null?0:a0)
-a0=J.e(i,"discountAmount")
-e=J.eA(a0==null?0:a0)
+case 7:m=a8
+b=t.N
+l=A.a3(["motorcycle",0,"car",0,"other",0],b,t.S)
+k=A.a3(["motorcycle",0,"car",0,"other",0],b,t.i)
+for(a=m.gci(),a0=a.length,a1=0;a1<a.length;a.length===a0||(0,A.J)(a),++a1){j=a[a1]
+a2=j
+a2=J.eh(a2).dL(a2)
+a2.toString
+i=a2
+a3=J.e(i,"status")
+h=a3==null?"":a3
+a2=J.e(i,"selectedRide")
+a4=a2==null?null:J.b9(a2).toLowerCase()
+g=a4==null?"other":a4
+a2=J.e(i,"fare")
+f=J.eA(a2==null?0:a2)
+a2=J.e(i,"discountAmount")
+e=J.eA(a2==null?0:a2)
+d=f-e
+c=d*0.15
 if(!J.qr(l,g)){J.aH(l,g,0)
-J.aH(k,g,0)}a0=J.e(l,g)
-if(a0==null)a0=0
-J.aH(l,g,a0+1)
-if(J.d(h,"completed")){a0=J.e(k,g)
-if(a0==null)a0=0
-J.aH(k,g,a0+(f-e))}}d=A.a3(["counts",l,"revenue",k],d,t.z)
-q=d
+J.aH(k,g,0)}a2=J.e(l,g)
+if(a2==null)a2=0
+J.aH(l,g,a2+1)
+if(J.d(h,"completed")){a2=J.e(k,g)
+if(a2==null)a2=0
+J.aH(k,g,a2+c)}}b=A.a3(["counts",l,"revenue",k],b,t.z)
+q=b
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-a4=o
-d=t.N
-d=A.a3(["counts",A.a3(["motorcycle",0,"car",0,"other",0],d,t.S),"revenue",A.a3(["motorcycle",0,"car",0,"other",0],d,t.i)],d,t.z)
-q=d
+a6=o
+b=t.N
+b=A.a3(["counts",A.a3(["motorcycle",0,"car",0,"other",0],b,t.S),"revenue",A.a3(["motorcycle",0,"car",0,"other",0],b,t.i)],b,t.z)
+q=b
 s=1
 break
 s=6
