@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "f5d2364b620d02e462fc7aaabcc40b39",
-"assets/AssetManifest.bin.json": "05a5d8ea3a34aef08f1386f90ac8569d",
-"assets/AssetManifest.json": "72ca58bb1efc2e5cfe7ae024e8cd3d7c",
+const RESOURCES = {"assets/AssetManifest.bin": "c85755e83393c7add39aee0080ef9c1c",
+"assets/AssetManifest.bin.json": "241e9a5a1f0f34f5af7b14544d0d07f3",
+"assets/AssetManifest.json": "2b51c28ce16bb74e7c8cbd2c4e0dab69",
 "assets/assets/fonts/Urbanist-Bold.ttf": "f1be12677cd5a989d8851a7743ea9b9e",
 "assets/assets/fonts/Urbanist-Medium.ttf": "b772c045777ba8193439cd080d580285",
 "assets/assets/fonts/Urbanist-Regular.ttf": "40b401cd8b8d6dc564119975375d0111",
@@ -15,6 +15,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "f5d2364b620d02e462fc7aaabcc40b39
 "assets/assets/images/illu-removebg-preview.png": "856f4a1ee02a6e6482c3238f5738be13",
 "assets/assets/images/image%2520(1)%25201.png": "9b5a12727dda68e7682668dd70575d10",
 "assets/assets/images/Image%25203.png": "2380c24d6c7f79e4557ddf39eefadd52",
+"assets/assets/images/Image%25204.png": "cc38910595ba4176276439bfbeff6f67",
 "assets/assets/images/location.png": "1b53f412c35c75691679546c7342dd1f",
 "assets/assets/images/logo.jpg": "ceb284e55e9f5334d711bc7313feabc0",
 "assets/assets/images/logo.png": "c131e6419a4294b85b817b15950f22a7",
@@ -27,8 +28,8 @@ const RESOURCES = {"assets/AssetManifest.bin": "f5d2364b620d02e462fc7aaabcc40b39
 "assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
 "assets/packages/fluttertoast/assets/toastify.js": "56e2c9cedd97f10e7e5f1cebd85d53e3",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "15d54d142da2f2d6f2e90ed1d55121af",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "ae3c3c61a67825f9eaff5a3199be10b8",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "965765879bb1bef8cb38daeb6c48a0d0",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "67810c43100793e163d9ba8d4f1ac7dc",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "e9c53f42d49fc55a0223e3317e808cc8",
 "assets/packages/google_places_flutter/images/location.json": "afa33acf2c340246c901718f4efdfccf",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "canvaskit/canvaskit.js": "728b2d477d9b8c14593d4f9b82b484f3",
@@ -42,14 +43,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "f5d2364b620d02e462fc7aaabcc40b39
 "canvaskit/skwasm.wasm": "39dd80367a4e71582d234948adc521c0",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "83d881c1dbb6d6bcd6b42e274605b69c",
-"flutter_bootstrap.js": "b9bc80989df61a6a5c83002a4db1ddd2",
+"flutter_bootstrap.js": "a1ac662bc169694321671e3b1ba9a9ee",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "31f13ebef9d4c0385544e938cf826f14",
 "/": "31f13ebef9d4c0385544e938cf826f14",
-"main.dart.js": "7786c5acc6e0ec9d748ec669bda99341",
+"main.dart.js": "2fd78261371d085da5ba7bc22c510566",
 "manifest.json": "5b5e89c041a5a65f8863dcb8d798f5c5",
 "version.json": "0f177688eb6d48f70007f85d70a8dc3e"};
 // The application shell files that are downloaded before a service worker can
