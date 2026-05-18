@@ -1,11 +1,11 @@
 {
-    "name": "SakayPH Admin",
-    "short_name": "SakayPH Admin",
+    "name": "GoSakay Admin",
+    "short_name": "GoSakay Admin",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "SakayPH Admin Panel for managing rides, deliveries, drivers, and customers.",
+    "description": "GoSakay Admin Panel for managing rides, deliveries, drivers, and customers.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
