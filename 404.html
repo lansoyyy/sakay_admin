@@ -5,10 +5,16 @@
   <title>GoSakay Admin</title>
   <script>
     // GitHub Pages SPA redirect workaround.
-    // When GitHub Pages returns a 404 (e.g. on page refresh at /sakay_admin/franchisee/dashboard),
-    // this page encodes the path and redirects to index.html so Flutter can handle it.
-    var segmentsToKeep = 1; // number of path segments for the repo (e.g. /sakay_admin)
+    // On refresh, GitHub Pages has no file for /admin/dashboard etc., so we encode
+    // the path and send the browser to index.html so Flutter can handle it.
+    //
+    // Custom domain: site root (0 segments). github.io project site: /sakay_admin (1 segment).
     var l = window.location;
+    var segmentsToKeep = 0;
+    var pathParts = l.pathname.split('/').filter(function(s) { return s.length > 0; });
+    if (l.hostname.endsWith('github.io') && pathParts[0] === 'sakay_admin') {
+      segmentsToKeep = 1;
+    }
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
       l.pathname.split('/').slice(0, 1 + segmentsToKeep).join('/') + '/?p=' +
