@@ -135604,22 +135604,22 @@ i=j==null?c:j
 if(i==null)i=0
 k=J.f(d.r,"completedBookings")
 k=A.k(k==null?0:k)
-j=a?200:1/0
+j=a?400:1/0
 j=A.bf(A.fY(B.T,B.e5,"Completed Bookings",k),c,j)
 k=J.f(d.r,"activeRides")
 k=A.k(k==null?0:k)
-h=a?200:1/0
+h=a?400:1/0
 h=A.bf(A.fY(B.aD,B.c6,"Active Rides",k),c,h)
 k=J.f(d.r,"totalDriversInCity")
 k=A.k(k==null?0:k)
-g=a?200:1/0
+g=a?400:1/0
 g=A.bf(A.fY(B.ad,B.tB,"Drivers in City",k),c,g)
 k=J.f(d.r,"totalBookings")
 k=A.k(k==null?0:k)
-f=a?200:1/0
+f=a?400:1/0
 f=A.bf(A.fY(B.z,B.hL,"Total Bookings",k),c,f)
 k=d.Q.bC(i)
-e=a?200:1/0
+e=a?400:1/0
 e=A.a([m,B.bJ,l,B.aL,A.ps(A.a([j,h,g,f,A.bf(A.fY(B.T,B.j6,"Your Earnings",k),c,e)],p),16,16),B.aL],p)
 if(a)e.push(A.Y(A.a([A.D(d.a56(),3),B.aI,A.D(d.ZJ(),2)],p),B.M,B.q,B.r,0,c))
 else B.n.S(e,A.a([d.a56(),B.a2,d.ZJ()],p))
@@ -140800,13 +140800,13 @@ break
 case"licenseBack":q="Driver's License (Back)"
 s=B.ev
 break
-case"vehicleRegistration":q="OR/CR"
+case"vehicleRegistration":q="Original Receipt"
 s=B.tC
 break
 case"driverPhoto":q="Driver Photo"
 s=B.eV
 break
-case"id":q="NBI / POLICE CLEARANCE"
+case"id":q="Certificate or Registration"
 s=B.ev
 break
 case"motorcycle":q="Vehicle Picture"
