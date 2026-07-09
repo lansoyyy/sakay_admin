@@ -133013,13 +133013,13 @@ break
 case"licenseBack":s=i.a="Driver's License (Back)"
 r=B.ev
 break
-case"vehicleRegistration":s=i.a="OR/CR"
+case"vehicleRegistration":s=i.a="Official reciept"
 r=B.tC
 break
 case"driverPhoto":s=i.a="Driver Photo"
 r=B.eV
 break
-case"id":s=i.a="NBI / POLICE CLEARANCE"
+case"id":s=i.a="Certificate of Registration"
 r=B.ev
 break
 case"motorcycle":s=i.a="Vehicle Picture"
@@ -140928,7 +140928,7 @@ break
 case"driverPhoto":q="Driver Photo"
 s=B.eV
 break
-case"id":q="Certificate or Registration"
+case"id":q="Certificate of Registration"
 s=B.ev
 break
 case"motorcycle":q="Vehicle Picture"
